@@ -24,14 +24,14 @@ class Product {
 	}
 }
 
-class Tv extends Product {
+class Tv extends Prdt {
 	static int price = 100;
 	Tv() {
 		super(price);
 		System.out.printf("가격은 %s원입니다. \n", price);
 	}
 }
-class Computer extends Product {
+class Computer extends Prdt {
 	static int price = 200;
 	Computer() {
 		super(price);
@@ -43,7 +43,7 @@ class BuyerNam {
 	int money = 1000;
 	int bonusPoint = 0;
 	
-	void buy(Product p) {
+	void buy(Prdt p) {
 		money -= p.price;
 		bonusPoint += p.bonusPoint;
 		}
